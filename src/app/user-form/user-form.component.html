@@ -1,0 +1,12 @@
+<input placeholder="Enter your name" (keyup)="showEvent($event)">
+<h3>
+  Your name is: {{name}}
+</h3>
+
+<input placeholder="Binding with ngModel" [(ngModel)]="bindingWithNgModel" #referenceName>
+<h3>
+  Your name is: {{bindingWithNgModel}}
+</h3>
+<code>
+  {{referenceName.value | json}}
+</code>

@@ -12,9 +12,12 @@ export class WordComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // nameComponent = 'Minh Dat'
-
   en : string = 'Hello';
   vn: string = 'Xin chào';
+  imgUrl = 'https://i.picsum.photos/id/460/200/200.jpg?hmac=hL3I5G2p0p6vDGPyV9hergug-KipbUJVxqnnGIEBXg4';
+  hidden = false;
 
+  hiddenTag() {
+    this.hidden = !this.hidden;
+  }
 }
